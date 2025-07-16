@@ -1,0 +1,12 @@
+name: LengMiningList
+version: 2.0
+main: shaziawa.LengMiningList.LengMiningList
+api-version: 1.21
+commands:
+  wjb:
+    description: 切换排行榜显示
+    usage: /wjb [info|reload]
+permissions:
+  LengMiningList.reload:
+    description: 允许重载插件配置
+    default: op

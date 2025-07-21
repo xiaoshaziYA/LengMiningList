@@ -5,14 +5,39 @@ enabled-boards:
   pvp: true
   mob: true
   daoguan: true
+  void: true
+  suicide: true
+  discard: true
 
-# 道馆榜特殊设置
-daoguan-settings:
-  wei-ai-mu-id: "WeiAiMu" #靠近指定玩家触发特殊操作。这里填写其ID
-  points-per-second-near-wei-ai-mu: 10 #蹲着靠近每3秒加10 （上面指定的玩家）
-  points-per-3-seconds: 1 #蹲着靠近每三秒加多少
-  permission-to-grant: "cfc.daoguan" #你可以搭配一些luckperms或者称号插件来实现发放指定称号
-  required-points-for-permission: 1000 #分数多少发放上面的权限
+# 各榜单权限奖励设置
+board-rewards:
+  mining:
+    permission: "cfc.watuji"
+    required-points: 100000
+  placing:
+    permission: "cfc.fangzhi"
+    required-points: 10000
+  pvp:
+    permission: "cfc.bidong"
+    required-points: 100
+  mob:
+    permission: "cfc.lieren"
+    required-points: 2000
+  void:
+    permission: "cfc.xukong"
+    required-points: 50000
+  suicide:
+    permission: "cfc.ziwozhuzai"
+    required-points: 3000
+  discard:
+    permission: "cfc.diuqi"
+    required-points: 100000
+  daoguan:
+    permission: "cfc.daoguan"
+    required-points: 1000
+    wei-ai-mu-id: "WeiAiMu"
+    points-per-second-near-wei-ai-mu: 10
+    points-per-3-seconds: 1
   
   #关于排行榜上ID颜色
   #color.admin 红色（管理）

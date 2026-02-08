@@ -1,6 +1,6 @@
 # LengMiningList
 适用于高版本服务器的优秀榜单插件 1.21.x
-- 获得称号奖励的原理是通过luckperms给特定权限
+- 获得称号奖励的原理是通过luckperms给特定权限，权限在代码里面嵌套了
 - **使用本插件，请遵守许可证！尊重作者！**
 ```专属纪念称号获得：
 挖掘榜达到：100000
@@ -35,7 +35,7 @@ enabled-boards:
 daoguan-settings:
   wei-ai-mu-id: "WeiAiMu" #靠近指定玩家触发特殊操作。这里填写其ID
   points-per-second-near-wei-ai-mu: 10 #蹲着靠近每3秒加10 （上面指定的玩家）
-  points-per-3-seconds: 1 #蹲着靠近每三秒加多少
+  points-per-3-seconds: 1 #蹲着靠近每三秒加多少（普通玩家）
   permission-to-grant: "cfc.daoguan" #你可以搭配一些luckperms或者称号插件来实现发放指定称号
   required-points-for-permission: 1000 #分数多少发放上面的权限
   
